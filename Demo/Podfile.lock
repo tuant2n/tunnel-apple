@@ -1,33 +1,38 @@
 PODS:
-  - OpenSSL-Apple (1.1.0h)
-  - PIATunnel (1.1.6):
-    - PIATunnel/AppExtension (= 1.1.6)
-    - PIATunnel/Core (= 1.1.6)
-  - PIATunnel/AppExtension (1.1.6):
+  - OpenSSL-Universal (1.1.1900)
+  - PIATunnel (2.0.2):
+    - PIATunnel/AppExtension (= 2.0.2)
+    - PIATunnel/Core (= 2.0.2)
+  - PIATunnel/AppExtension (2.0.2):
     - PIATunnel/Core
     - SwiftyBeaver
-  - PIATunnel/Core (1.1.6):
-    - OpenSSL-Apple (~> 1.1.0h)
-    - SwiftyBeaver
-  - SwiftyBeaver (1.6.0)
+  - PIATunnel/Core (2.0.2):
+    - OpenSSL-Universal (~> 1.1.0i)
+    - SwiftyBeaver (~> 1.7.0)
+  - SwiftyBeaver (1.7.1)
 
 DEPENDENCIES:
-  - PIATunnel (from `..`)
+  - PIATunnel (from `https://github.com/tuant2n/tunnel-apple.git`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - OpenSSL-Apple
+  trunk:
+    - OpenSSL-Universal
     - SwiftyBeaver
 
 EXTERNAL SOURCES:
   PIATunnel:
-    :path: ".."
+    :git: https://github.com/tuant2n/tunnel-apple.git
+
+CHECKOUT OPTIONS:
+  PIATunnel:
+    :commit: badfb491bdf2bf91e085c54e7967d31cdbbc1958
+    :git: https://github.com/tuant2n/tunnel-apple.git
 
 SPEC CHECKSUMS:
-  OpenSSL-Apple: cd153d705ef350eb834ae7ff5f21f792b51ed208
-  PIATunnel: b98780a58c8826bd82f1e15878078997ed172680
-  SwiftyBeaver: e45759613e50b522b0e6f53b1f0f14389b45ca34
+  OpenSSL-Universal: 84efb8a29841f2764ac5403e0c4119a28b713346
+  PIATunnel: 88f02a6978dac182f62b87c2d3123afa37d264d6
+  SwiftyBeaver: da5e573ad583586c18236324c36900990afe1733
 
-PODFILE CHECKSUM: 1199e89f72f37e986463243abe5442ffdc81274c
+PODFILE CHECKSUM: c5ab70c21b26521fa5549b9192dff21c8d86e55a
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2

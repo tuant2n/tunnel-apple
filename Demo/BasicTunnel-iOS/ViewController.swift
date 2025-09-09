@@ -11,7 +11,7 @@ import NetworkExtension
 import PIATunnel
 
 class ViewController: UIViewController, URLSessionDataDelegate {
-    static let APP_GROUP = "group.com.privateinternetaccess.ios.demo.BasicTunnel"
+    static let APP_GROUP = "group.com.toh.app.vpn"
     
     static let VPN_BUNDLE = "com.privateinternetaccess.ios.demo.BasicTunnel.BasicTunnelExtension"
 

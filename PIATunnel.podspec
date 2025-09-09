@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
         p.pod_target_xcconfig   = { "OTHER_LDFLAGS" => "-framework openssl",
                                     "SWIFT_INCLUDE_PATHS" => "${PODS_TARGET_SRCROOT}/PIATunnel/Sources/Core",
                                     "APPLICATION_EXTENSION_API_ONLY" => "YES" }
-        p.dependency "SwiftyBeaver", "~> 1.7.0"
+        p.dependency "SwiftyBeaver", "~> 1.9.0"
         p.dependency "OpenSSL-Universal", "~> 1.1.0i"
     end
 
