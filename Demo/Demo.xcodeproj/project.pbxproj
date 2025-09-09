@@ -15,6 +15,7 @@
 		0EB3A0011F7425140023AFFC /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB3A0001F7425140023AFFC /* PacketTunnelProvider.swift */; };
 		0EB3A0051F7425140023AFFC /* BasicTunnelExtension-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0EB39FFC1F7425140023AFFC /* BasicTunnelExtension-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3908146517D6E4FB2A9D937D /* Pods_iOS_BasicTunnelExtension_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 793C61EE3021675F5E1E7851 /* Pods_iOS_BasicTunnelExtension_iOS.framework */; };
+		6983E3C22E6FE3F600FC56E2 /* Untitled.ovpn in Resources */ = {isa = PBXBuildFile; fileRef = 6983E3C12E6FE3F600FC56E2 /* Untitled.ovpn */; };
 		7A8E24264F7886297FF7360E /* Pods_iOS_BasicTunnel_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD8D66DB993CAA3D95BF58 /* Pods_iOS_BasicTunnel_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		6435864DB434E6A2405C0A03 /* Pods-iOS-BasicTunnelExtension-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-BasicTunnelExtension-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-BasicTunnelExtension-iOS/Pods-iOS-BasicTunnelExtension-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		644A04AFE7563DC48EFAF754 /* Pods-macOS-BasicTunnelExtension-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS-BasicTunnelExtension-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-macOS-BasicTunnelExtension-macOS/Pods-macOS-BasicTunnelExtension-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		64C5E38D0BFB111803E5B140 /* Pods_macOS_BasicTunnelExtension_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_macOS_BasicTunnelExtension_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6983E3C12E6FE3F600FC56E2 /* Untitled.ovpn */ = {isa = PBXFileReference; lastKnownFileType = text; path = Untitled.ovpn; sourceTree = "<group>"; };
 		793C61EE3021675F5E1E7851 /* Pods_iOS_BasicTunnelExtension_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_BasicTunnelExtension_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86573C14FDBC5268162C4955 /* Pods-macOS-BasicTunnel-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-macOS-BasicTunnel-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-macOS-BasicTunnel-macOS/Pods-macOS-BasicTunnel-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		9E2D2F7DF58A0C0F6427E281 /* Pods-iOS-BasicTunnel-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-BasicTunnel-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-BasicTunnel-iOS/Pods-iOS-BasicTunnel-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				0EB39FE81F7424F80023AFFC /* AppDelegate.swift */,
 				0EB39FEA1F7424F80023AFFC /* ViewController.swift */,
+				6983E3C12E6FE3F600FC56E2 /* Untitled.ovpn */,
 				0EB39FEC1F7424F80023AFFC /* Main.storyboard */,
 				0EB39FEF1F7424F80023AFFC /* Assets.xcassets */,
 				0EB39FF11F7424F80023AFFC /* LaunchScreen.storyboard */,
@@ -282,6 +285,7 @@
 				0EB39FF31F7424F80023AFFC /* LaunchScreen.storyboard in Resources */,
 				0EB39FF01F7424F80023AFFC /* Assets.xcassets in Resources */,
 				0EB39FEE1F7424F80023AFFC /* Main.storyboard in Resources */,
+				6983E3C22E6FE3F600FC56E2 /* Untitled.ovpn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

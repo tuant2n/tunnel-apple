@@ -164,7 +164,7 @@ class NEUDPInterface: NSObject, GenericSocket, LinkInterface {
 
     let communicationType: CommunicationType
     
-    let negotiationTimeout: TimeInterval = 10.0
+    let negotiationTimeout: TimeInterval = 60.0 //10.0
     
     let hardResetTimeout: TimeInterval = 5.0
     
