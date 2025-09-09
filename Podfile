@@ -1,4 +1,3 @@
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.0'
 use_frameworks!
 
@@ -7,7 +6,7 @@ inhibit_all_warnings!
 
 abstract_target 'PIATunnel' do
     pod 'SwiftyBeaver', '~> 1.7.0'
-    pod 'OpenSSL-Apple', "~> 1.1.0i"
+    pod 'OpenSSL-Universal', "~> 1.1.0i"
 
     target 'PIATunnel-iOS' do
         platform :ios, '11.0'
