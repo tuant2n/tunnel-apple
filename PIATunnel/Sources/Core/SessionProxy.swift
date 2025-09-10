@@ -1191,7 +1191,8 @@ public class SessionProxy {
         }
         
         // drop queued out packets if ack-ed
-        for (i, controlPacket) in controlQueueOut.enumerated() {
+        for i in (0..<controlQueueOut.count).reversed() {
+            let controlPacket = controlQueueOut[i]
             if packetIds.contains(controlPacket.packetId) {
                 controlQueueOut.remove(at: i)
             }
