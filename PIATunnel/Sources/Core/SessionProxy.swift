@@ -57,7 +57,7 @@ public enum SessionError: Error {
 }
 
 /// Observes major events notified by a `SessionProxy`.
-public protocol SessionProxyDelegate: class {
+public protocol SessionProxyDelegate: AnyObject {
 
     /**
      Called after starting a session.
@@ -459,7 +459,7 @@ public class SessionProxy {
             if let packets = newPackets, !packets.isEmpty {
                 self?.maybeRenegotiate()
 
-//                log.verbose("Received \(packets.count) packets from LINK")
+                log.verbose("Received \(packets.count) packets from LINK")
                 self?.receiveLink(packets: packets)
             }
         }
@@ -474,7 +474,7 @@ public class SessionProxy {
             }
 
             if let packets = newPackets, !packets.isEmpty {
-//                log.verbose("Received \(packets.count) packets from \(self.tunnelName)")
+                log.verbose("Received \(packets.count) packets")
                 self?.receiveTunnel(packets: packets)
             }
         }
@@ -491,7 +491,7 @@ public class SessionProxy {
         var dataPacketsByKey = [UInt8: [Data]]()
         
         for packet in packets {
-//            log.verbose("Received data from LINK (\(packet.count) bytes): \(packet.toHex())")
+            log.verbose("Received data from LINK (\(packet.count) bytes): \(packet.toHex())")
 
             guard let firstByte = packet.first else {
                 log.warning("Dropped malformed packet (missing header)")
@@ -504,7 +504,7 @@ public class SessionProxy {
             }
             let key = firstByte & 0b111
 
-//            log.verbose("Parsed packet with (code, key) = (\(code.rawValue), \(key))")
+            log.verbose("Parsed packet with (code, key) = (\(code.rawValue), \(key))")
             
             var offset = 1
             if (code == .dataV2) {
@@ -1072,7 +1072,7 @@ public class SessionProxy {
             }
             controlPacket.sentDate = Date()
         }
-//        log.verbose("Packets now pending ack: \(controlPendingAcks)")
+        log.verbose("Packets now pending ack: \(controlPendingAcks)")
     }
     
     // Ruby: setup_keys
@@ -1200,7 +1200,7 @@ public class SessionProxy {
 
         // remove ack-ed packets from pending
         controlPendingAcks.subtract(packetIds)
-//        log.verbose("Packets still pending ack: \(controlPendingAcks)")
+        log.verbose("Packets still pending ack: \(controlPendingAcks)")
 
         // retry PUSH_REQUEST if ack queue is empty (all sent packets were ack'ed)
         if (isReliableLink && controlPendingAcks.isEmpty) {
