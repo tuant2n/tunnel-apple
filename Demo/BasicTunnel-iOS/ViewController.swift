@@ -186,8 +186,8 @@ class ViewController: UIViewController, URLSessionDataDelegate {
             builder.endpointProtocols = [PIATunnelProvider.EndpointProtocol(.udp, 1194, .vanilla)]
             builder.cipher = PIATunnelProvider.Cipher.aes128cbc
             builder.digest = PIATunnelProvider.Digest.sha1
-//            builder.mtu = 1000 //NSNumber(integerLiteral: config.tunMtu ?? 1350)
-//            builder.renegotiatesAfterSeconds = config.reneg
+            builder.mtu = 1300 //NSNumber(integerLiteral: config.tunMtu ?? 1350)
+            builder.renegotiatesAfterSeconds = config.reneg
             
             if let _ = config.keepalive {
                 

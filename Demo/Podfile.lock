@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   PIATunnel:
-    :commit: a909a15b615639dd46c275626c692c0e0d3e81ca
+    :commit: 2f00ab013c011b204813e2791d26bdacde42bdf9
     :git: https://github.com/tuant2n/tunnel-apple.git
 
 SPEC CHECKSUMS:
